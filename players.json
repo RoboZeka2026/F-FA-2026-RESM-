@@ -78,5 +78,325 @@
     "club": "Liverpool",
     "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p203376.png",
     "stats": { "PAC": 78, "SHO": 60, "PAS": 71, "DRI": 72, "DEF": 89, "PHY": 86 }
+  },
+  {
+    "name": "Neymar Jr",
+    "rating": 89,
+    "position": "LW",
+    "club": "Al Hilal",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p190871.png",
+    "stats": { "PAC": 86, "SHO": 83, "PAS": 85, "DRI": 93, "DEF": 37, "PHY": 61 }
+  },
+  {
+    "name": "Robert Lewandowski",
+    "rating": 90,
+    "position": "ST",
+    "club": "FC Barcelona",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p188545.png",
+    "stats": { "PAC": 75, "SHO": 91, "PAS": 80, "DRI": 86, "DEF": 44, "PHY": 84 }
+  },
+  {
+    "name": "Antoine Griezmann",
+    "rating": 88,
+    "position": "ST",
+    "club": "Atlético de Madrid",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p194765.png",
+    "stats": { "PAC": 80, "SHO": 88, "PAS": 87, "DRI": 88, "DEF": 52, "PHY": 70 }
+  },
+  {
+    "name": "Victor Osimhen",
+    "rating": 88,
+    "position": "ST",
+    "club": "Galatasaray",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p232293.png",
+    "stats": { "PAC": 90, "SHO": 86, "PAS": 66, "DRI": 83, "DEF": 41, "PHY": 82 }
+  },
+  {
+    "name": "Mauro Icardi",
+    "rating": 83,
+    "position": "ST",
+    "club": "Galatasaray",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p201399.png",
+    "stats": { "PAC": 74, "SHO": 85, "PAS": 68, "DRI": 79, "DEF": 35, "PHY": 71 }
+  },
+  {
+    "name": "Dusan Tadic",
+    "rating": 82,
+    "position": "LW",
+    "club": "Fenerbahçe",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p199434.png",
+    "stats": { "PAC": 66, "SHO": 79, "PAS": 84, "DRI": 82, "DEF": 41, "PHY": 75 }
+  },
+  {
+    "name": "Edin Dzeko",
+    "rating": 81,
+    "position": "ST",
+    "club": "Fenerbahçe",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p180930.png",
+    "stats": { "PAC": 60, "SHO": 83, "PAS": 71, "DRI": 74, "DEF": 42, "PHY": 73 }
+  },
+  {
+    "name": "Fred",
+    "rating": 81,
+    "position": "CM",
+    "club": "Fenerbahçe",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p209365.png",
+    "stats": { "PAC": 78, "SHO": 72, "PAS": 79, "DRI": 82, "DEF": 76, "PHY": 74 }
+  },
+  {
+    "name": "Vincent Aboubakar",
+    "rating": 79,
+    "position": "ST",
+    "club": "Hatayspor",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p204529.png",
+    "stats": { "PAC": 78, "SHO": 80, "PAS": 70, "DRI": 81, "DEF": 32, "PHY": 82 }
+  },
+  {
+    "name": "Fernando Muslera",
+    "rating": 80,
+    "position": "GK",
+    "club": "Galatasaray",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p183888.png",
+    "stats": { "PAC": 78, "SHO": 77, "PAS": 74, "DRI": 82, "DEF": 45, "PHY": 78 }
+  },
+  {
+    "name": "Luka Modric",
+    "rating": 87,
+    "position": "CM",
+    "club": "Real Madrid",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p177003.png",
+    "stats": { "PAC": 72, "SHO": 76, "PAS": 89, "DRI": 87, "DEF": 72, "PHY": 66 }
+  },
+  {
+    "name": "Frenkie de Jong",
+    "rating": 87,
+    "position": "CM",
+    "club": "FC Barcelona",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p228702.png",
+    "stats": { "PAC": 82, "SHO": 69, "PAS": 86, "DRI": 87, "DEF": 77, "PHY": 78 }
+  },
+  {
+    "name": "Federico Valverde",
+    "rating": 88,
+    "position": "CM",
+    "club": "Real Madrid",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p239053.png",
+    "stats": { "PAC": 88, "SHO": 82, "PAS": 84, "DRI": 84, "DEF": 78, "PHY": 80 }
+  },
+  {
+    "name": "Bukayo Saka",
+    "rating": 86,
+    "position": "RW",
+    "club": "Arsenal",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p246669.png",
+    "stats": { "PAC": 85, "SHO": 80, "PAS": 81, "DRI": 87, "DEF": 65, "PHY": 69 }
+  },
+  {
+    "name": "Rafael Leão",
+    "rating": 86,
+    "position": "LW",
+    "club": "Milan",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p241753.png",
+    "stats": { "PAC": 93, "SHO": 82, "PAS": 75, "DRI": 87, "DEF": 27, "PHY": 74 }
+  },
+  {
+    "name": "Lautaro Martínez",
+    "rating": 87,
+    "position": "ST",
+    "club": "Inter",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p231478.png",
+    "stats": { "PAC": 80, "SHO": 86, "PAS": 71, "DRI": 84, "DEF": 48, "PHY": 84 }
+  },
+  {
+    "name": "Heung Min Son",
+    "rating": 87,
+    "position": "LW",
+    "club": "Tottenham Hotspur",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p200104.png",
+    "stats": { "PAC": 87, "SHO": 88, "PAS": 80, "DRI": 84, "DEF": 42, "PHY": 70 }
+  },
+  {
+    "name": "Martin Ødegaard",
+    "rating": 87,
+    "position": "CAM",
+    "club": "Arsenal",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p222492.png",
+    "stats": { "PAC": 75, "SHO": 79, "PAS": 88, "DRI": 87, "DEF": 58, "PHY": 63 }
+  },
+  {
+    "name": "Bruno Fernandes",
+    "rating": 88,
+    "position": "CAM",
+    "club": "Manchester United",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p212198.png",
+    "stats": { "PAC": 71, "SHO": 86, "PAS": 88, "DRI": 83, "DEF": 68, "PHY": 77 }
+  },
+  {
+    "name": "Marcus Rashford",
+    "rating": 85,
+    "position": "LW",
+    "club": "Manchester United",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p231677.png",
+    "stats": { "PAC": 90, "SHO": 86, "PAS": 78, "DRI": 84, "DEF": 41, "PHY": 74 }
+  },
+  {
+    "name": "Rodri",
+    "rating": 89,
+    "position": "CM",
+    "club": "Manchester City",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p231866.png",
+    "stats": { "PAC": 58, "SHO": 73, "PAS": 80, "DRI": 79, "DEF": 85, "PHY": 84 }
+  },
+  {
+    "name": "Declan Rice",
+    "rating": 85,
+    "position": "CM",
+    "club": "Arsenal",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p234378.png",
+    "stats": { "PAC": 74, "SHO": 65, "PAS": 75, "DRI": 77, "DEF": 83, "PHY": 81 }
+  },
+  {
+    "name": "Ruben Dias",
+    "rating": 89,
+    "position": "CB",
+    "club": "Manchester City",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p239818.png",
+    "stats": { "PAC": 62, "SHO": 39, "PAS": 66, "DRI": 69, "DEF": 89, "PHY": 87 }
+  },
+  {
+    "name": "Marquinhos",
+    "rating": 87,
+    "position": "CB",
+    "club": "Paris Saint-Germain",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p207865.png",
+    "stats": { "PAC": 78, "SHO": 56, "PAS": 75, "DRI": 73, "DEF": 89, "PHY": 80 }
+  },
+  {
+    "name": "William Saliba",
+    "rating": 83,
+    "position": "CB",
+    "club": "Arsenal",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p243580.png",
+    "stats": { "PAC": 82, "SHO": 35, "PAS": 68, "DRI": 71, "DEF": 84, "PHY": 81 }
+  },
+  {
+    "name": "Thibaut Courtois",
+    "rating": 90,
+    "position": "GK",
+    "club": "Real Madrid",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p192119.png",
+    "stats": { "PAC": 85, "SHO": 89, "PAS": 76, "DRI": 93, "DEF": 46, "PHY": 90 }
+  },
+  {
+    "name": "Alisson Becker",
+    "rating": 89,
+    "position": "GK",
+    "club": "Liverpool",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p212831.png",
+    "stats": { "PAC": 86, "SHO": 85, "PAS": 85, "DRI": 89, "DEF": 54, "PHY": 90 }
+  },
+  {
+    "name": "Marc-André ter Stegen",
+    "rating": 89,
+    "position": "GK",
+    "club": "FC Barcelona",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p192448.png",
+    "stats": { "PAC": 86, "SHO": 85, "PAS": 89, "DRI": 91, "DEF": 47, "PHY": 86 }
+  },
+  {
+    "name": "Mike Maignan",
+    "rating": 87,
+    "position": "GK",
+    "club": "Milan",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p215698.png",
+    "stats": { "PAC": 85, "SHO": 82, "PAS": 85, "DRI": 89, "DEF": 51, "PHY": 85 }
+  },
+  {
+    "name": "Jan Oblak",
+    "rating": 88,
+    "position": "GK",
+    "club": "Atlético de Madrid",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p200351.png",
+    "stats": { "PAC": 85, "SHO": 90, "PAS": 78, "DRI": 87, "DEF": 50, "PHY": 88 }
+  },
+  {
+    "name": "Arda Güler",
+    "rating": 77,
+    "position": "CAM",
+    "club": "Real Madrid",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p268438.png",
+    "stats": { "PAC": 72, "SHO": 74, "PAS": 80, "DRI": 81, "DEF": 50, "PHY": 56 }
+  },
+  {
+    "name": "Barış Alper Yılmaz",
+    "rating": 78,
+    "position": "RW",
+    "club": "Galatasaray",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p262529.png",
+    "stats": { "PAC": 89, "SHO": 73, "PAS": 70, "DRI": 76, "DEF": 61, "PHY": 82 }
+  },
+  {
+    "name": "Semih Kılıçsoy",
+    "rating": 72,
+    "position": "ST",
+    "club": "Beşiktaş",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p275487.png",
+    "stats": { "PAC": 76, "SHO": 73, "PAS": 58, "DRI": 73, "DEF": 30, "PHY": 74 }
+  },
+  {
+    "name": "Ferdi Kadıoğlu",
+    "rating": 79,
+    "position": "CM",
+    "club": "Brighton",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p235266.png",
+    "stats": { "PAC": 81, "SHO": 68, "PAS": 76, "DRI": 82, "DEF": 73, "PHY": 75 }
+  },
+  {
+    "name": "Hakan Çalhanoğlu",
+    "rating": 85,
+    "position": "CM",
+    "club": "Inter",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p208122.png",
+    "stats": { "PAC": 68, "SHO": 81, "PAS": 86, "DRI": 81, "DEF": 70, "PHY": 70 }
+  },
+  {
+    "name": "Kenan Yıldız",
+    "rating": 75,
+    "position": "LW",
+    "club": "Juventus",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p271790.png",
+    "stats": { "PAC": 81, "SHO": 72, "PAS": 67, "DRI": 79, "DEF": 38, "PHY": 65 }
+  },
+  {
+    "name": "Jamal Musiala",
+    "rating": 86,
+    "position": "CAM",
+    "club": "Bayern München",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p256630.png",
+    "stats": { "PAC": 82, "SHO": 81, "PAS": 79, "DRI": 91, "DEF": 63, "PHY": 64 }
+  },
+  {
+    "name": "Florian Wirtz",
+    "rating": 85,
+    "position": "CAM",
+    "club": "Bayer Leverkusen",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p256658.png",
+    "stats": { "PAC": 81, "SHO": 78, "PAS": 83, "DRI": 87, "DEF": 54, "PHY": 64 }
+  },
+  {
+    "name": "Phil Foden",
+    "rating": 85,
+    "position": "RW",
+    "club": "Manchester City",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p237692.png",
+    "stats": { "PAC": 84, "SHO": 80, "PAS": 81, "DRI": 87, "DEF": 57, "PHY": 63 }
+  },
+  {
+    "name": "Khvicha Kvaratskhelia",
+    "rating": 86,
+    "position": "LW",
+    "club": "Napoli",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p256260.png",
+    "stats": { "PAC": 84, "SHO": 80, "PAS": 81, "DRI": 87, "DEF": 41, "PHY": 71 }
   }
 ]

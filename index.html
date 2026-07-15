@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC 26 Pro Oyuncu Veritabanı</title>
+    <style>
+        /* Modern Karanlık Tema ve FC Renkleri */
+        body {
+            background-color: #05070a;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #f5c423; /* FC Gold Rengi */
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(245, 196, 35, 0.3);
+        }
+
+        p {
+            color: #a0aec0;
+            font-size: 1.1rem;
+        }
+
+        /* Kontrol Paneli */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        input, select {
+            background-color: #0f131a;
+            border: 2px solid #242c3d;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 10px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            border-color: #f5c423;
+            box-shadow: 0 0 15px rgba(245, 196, 35, 0.25);
+        }
+
+        /* Oyuncu Kartları Grid Yapısı */
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* EA FC Tarzı Profesyonel Oyuncu Kartı */
+        .player-card {
+            background: linear-gradient(135deg, #181d26 0%, #0d1015 100%);
+            border: 2px solid #f5c423; /* Altın Çerçeve */
+            border-radius: 18px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .player-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(245, 196, 35, 0.2);
+        }
+
+        /* Reyting ve Pozisyon Sol Üstte */
+        .card-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            line-height: 1.1;
+        }
+
+        .rating {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #f5c423;
+        }
+
+        .position {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #a0aec0;
+            text-transform: uppercase;
+        }
+
+        /* Oyuncu Gerçek Fotoğrafı */
+        .player-img-container {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+
+        /* Gerçek arka plansız render fotoğrafları için ayar */
+        .player-img {
+            max-height: 140px;
+            max-width: 140px;
+            object-fit: contain;
+            filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.5));
+        }
+
+        .player-name {
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-top: 5px;
+            color: #ffffff;
+            text-transform: uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .player-club {
+            font-size: 0.8rem;
+            color: #a0aec0;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        /* FC Detay İstatistikleri */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 2px;
+            border-top: 1px solid #242c3d;
+            padding-top: 10px;
+            font-size: 0.75rem;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-val {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .stat-lbl {
+            font-size: 0.65rem;
+            color: #718096;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FC 26 DATABASE</h1>
+        <p>Gerçek Oyuncular, Güncel İstatistikler ve Lisanslı Fotoğraflar</p>
+    </header>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Oyuncu ara (Örn: Messi, Mbappe)...">
+        <select id="positionFilter">
+            <option value="all">Tüm Pozisyonlar</option>
+            <option value="ST">ST (Santrafor)</option>
+            <option value="RW">RW (Sağ Kanat)</option>
+            <option value="LW">LW (Sol Kanat)</option>
+            <option value="CM">CM (Orta Saha)</option>
+            <option value="CAM">CAM (O.Ofansif Orta Saha)</option>
+            <option value="CB">CB (Stoper)</option>
+            <option value="GK">GK (Kaleci)</option>
+        </select>
+    </div>
+
+    <div class="player-grid" id="playerGrid">
+        <!-- Oyuncular buraya dinamik olarak eklenecek -->
+    </div>
+
+    <script>
+        let players = [];
+
+        // players.json dosyasından verileri otomatik çekiyoruz
+        async function fetchPlayers() {
+            try {
+                const response = await fetch('players.json');
+                players = await response.json();
+                displayPlayers(players);
+            } catch (error) {
+                console.error("Oyuncu verileri yüklenirken hata oluştu:", error);
+                playerGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #ff5252;">Lütfen players.json dosyasını oluşturup sayfayı yenileyin.</p>`;
+            }
+        }
+
+        const playerGrid = document.getElementById('playerGrid');
+        const searchInput = document.getElementById('searchInput');
+        const positionFilter = document.getElementById('positionFilter');
+
+        function displayPlayers(filteredPlayers) {
+            playerGrid.innerHTML = '';
+            
+            if (filteredPlayers.length === 0) {
+                playerGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: #a0aec0;">Oyuncu bulunamadı.</p>`;
+                return;
+            }
+
+            filteredPlayers.forEach(player => {
+                const card = document.createElement('div');
+                card.className = 'player-card';
+                card.innerHTML = `
+                    <div class="card-header">
+                        <span class="rating">${player.rating}</span>
+                        <span class="position">${player.position}</span>
+                    </div>
+                    <div class="player-img-container">
+                        <img class="player-img" src="${player.image}" alt="${player.name}" onerror="this.onerror=null; this.src='https://play-lh.googleusercontent.com/v8p09i-uI2p9vN5Yt5XyWlS42Vv3Lh0F9Zz2vN6pG3aZ6u6kLgQGz2b9fH2Y=w240';">
+                    </div>
+                    <div class="player-name">${player.name}</div>
+                    <div class="player-club">${player.club}</div>
+                    <div class="stats-container">
+                        <div class="stat-item"><span class="stat-val">${player.stats.PAC}</span><span class="stat-lbl">PAC</span></div>
+                        <div class="stat-item"><span class="stat-val">${player.stats.SHO}</span><span class="stat-lbl">SHO</span></div>
+                        <div class="stat-item"><span class="stat-val">${player.stats.PAS}</span><span class="stat-lbl">PAS</span></div>
+                        <div class="stat-item"><span class="stat-val">${player.stats.DRI}</span><span class="stat-lbl">DRI</span></div>
+                        <div class="stat-item"><span class="stat-val">${player.stats.DEF}</span><span class="stat-lbl">DEF</span></div>
+                        <div class="stat-item"><span class="stat-val">${player.stats.PHY}</span><span class="stat-lbl">PHY</span></div>
+                    </div>
+                `;
+                playerGrid.appendChild(card);
+            });
+        }
+
+        function filterPlayers() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedPosition = positionFilter.value;
+
+            const filtered = players.filter(player => {
+                const matchesName = player.name.toLowerCase().includes(searchTerm);
+                const matchesPosition = selectedPosition === 'all' || player.position === selectedPosition;
+                return matchesName && matchesPosition;
+            });
+
+            displayPlayers(filtered);
+        }
+
+        searchInput.addEventListener('input', filterPlayers);
+        positionFilter.addEventListener('change', filterPlayers);
+
+        // Sayfa açıldığında verileri çek
+        fetchPlayers();
+    </script>
+</body>
+</html>

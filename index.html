@@ -201,7 +201,6 @@
     <script>
         let players = [];
 
-        // players.json dosyasından verileri otomatik çekiyoruz
         async function fetchPlayers() {
             try {
                 const response = await fetch('players.json');
@@ -228,23 +227,43 @@
             filteredPlayers.forEach(player => {
                 const card = document.createElement('div');
                 card.className = 'player-card';
+                
+                // Kaleciler için farklı istatistik başlıkları gösterelim
+                const isGK = player.position === 'GK';
+                const labels = isGK 
+                    ? ['DIV', 'HAN', 'KIC', 'REF', 'SPD', 'POS'] 
+                    : ['PAC', 'SHO', 'PAS', 'DRI', 'DEF', 'PHY'];
+
+                const stats = player.stats;
+                // JSON dosyasında kalecilerin özellikleri standart PAC, SHO formatındaysa eşleştirelim
+                const val1 = stats.DIV || stats.PAC;
+                const val2 = stats.HAN || stats.SHO;
+                const val3 = stats.KIC || stats.PAS;
+                const val4 = stats.REF || stats.DRI;
+                const val5 = stats.SPD || stats.DEF;
+                const val6 = stats.POS || stats.PHY;
+
                 card.innerHTML = `
                     <div class="card-header">
                         <span class="rating">${player.rating}</span>
                         <span class="position">${player.position}</span>
                     </div>
                     <div class="player-img-container">
-                        <img class="player-img" src="${player.image}" alt="${player.name}" onerror="this.onerror=null; this.src='https://play-lh.googleusercontent.com/v8p09i-uI2p9vN5Yt5XyWlS42Vv3Lh0F9Zz2vN6pG3aZ6u6kLgQGz2b9fH2Y=w240';">
+                        <img class="player-img" 
+                             src="${player.image}" 
+                             alt="${player.name}" 
+                             referrerpolicy="no-referrer"
+                             onerror="this.onerror=null; this.src='https://secure.futbin.com/content/fifa24/img/players/p_1_1.png';">
                     </div>
                     <div class="player-name">${player.name}</div>
                     <div class="player-club">${player.club}</div>
                     <div class="stats-container">
-                        <div class="stat-item"><span class="stat-val">${player.stats.PAC}</span><span class="stat-lbl">PAC</span></div>
-                        <div class="stat-item"><span class="stat-val">${player.stats.SHO}</span><span class="stat-lbl">SHO</span></div>
-                        <div class="stat-item"><span class="stat-val">${player.stats.PAS}</span><span class="stat-lbl">PAS</span></div>
-                        <div class="stat-item"><span class="stat-val">${player.stats.DRI}</span><span class="stat-lbl">DRI</span></div>
-                        <div class="stat-item"><span class="stat-val">${player.stats.DEF}</span><span class="stat-lbl">DEF</span></div>
-                        <div class="stat-item"><span class="stat-val">${player.stats.PHY}</span><span class="stat-lbl">PHY</span></div>
+                        <div class="stat-item"><span class="stat-val">${val1}</span><span class="stat-lbl">${labels[0]}</span></div>
+                        <div class="stat-item"><span class="stat-val">${val2}</span><span class="stat-lbl">${labels[1]}</span></div>
+                        <div class="stat-item"><span class="stat-val">${val3}</span><span class="stat-lbl">${labels[2]}</span></div>
+                        <div class="stat-item"><span class="stat-val">${val4}</span><span class="stat-lbl">${labels[3]}</span></div>
+                        <div class="stat-item"><span class="stat-val">${val5}</span><span class="stat-lbl">${labels[4]}</span></div>
+                        <div class="stat-item"><span class="stat-val">${val6}</span><span class="stat-lbl">${labels[5]}</span></div>
                     </div>
                 `;
                 playerGrid.appendChild(card);
@@ -267,7 +286,6 @@
         searchInput.addEventListener('input', filterPlayers);
         positionFilter.addEventListener('change', filterPlayers);
 
-        // Sayfa açıldığında verileri çek
         fetchPlayers();
     </script>
 </body>

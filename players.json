@@ -400,3 +400,19 @@
     "stats": { "PAC": 84, "SHO": 80, "PAS": 81, "DRI": 87, "DEF": 41, "PHY": 71 }
   }
 ]
+{
+    "name": "Thibaut Courtois",
+    "rating": 90,
+    "position": "GK",
+    "club": "Real Madrid",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p192119.png",
+    "stats": { "DIV": 85, "HAN": 89, "KIC": 76, "REF": 93, "SPD": 46, "POS": 90 }
+  },
+  {
+    "name": "Fernando Muslera",
+    "rating": 80,
+    "position": "GK",
+    "club": "Galatasaray",
+    "image": "https://utcdn.ea.com/assets/fc24/v2/common/players/p183888.png",
+    "stats": { "DIV": 78, "HAN": 77, "KIC": 74, "REF": 82, "SPD": 45, "POS": 78 }
+  }
